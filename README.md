@@ -31,6 +31,8 @@ the programme. For example:
 ifort main.f90 -llapack -lblas -o myprogramme
 ```
 
+Note that for simplicity and efficiency, I used lapack and blas for matrix diagonalization.
+
 And run the programme:
 
 ```shell
