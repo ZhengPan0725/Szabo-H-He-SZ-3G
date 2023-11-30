@@ -1,7 +1,7 @@
 # Introduction
 
 This repository extends the Hatree Fock method programme based on the programme provided in the Modern Quantum Chemistry by Attila Szabo.
-The origin code in Szabo's book performs single zeta -NG(N ranges from 1 to 3) for H-He^{+}, which contains 2 electrons.
+The origin code in Szabo's book performs single zeta -NG(N ranges from 1 to 3) for $H-He^{+}$, which contains 2 electrons.
 
 In this repository, specifically main.f90, I extended the code in Szabo's book, making it capable of performing arbitrary number of
 atoms and electrons. 
