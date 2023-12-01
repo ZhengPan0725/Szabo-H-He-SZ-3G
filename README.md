@@ -1,13 +1,13 @@
 # Introduction
 
-This repository extends the Hatree Fock method programme based on the programme provided in the Modern Quantum Chemistry by Attila Szabo.
-The origin code in Szabo's book performs single zeta -NG(N ranges from 1 to 3) for $H-He^{+}$, which contains 2 electrons.
+This repository extends the Hatree Fock method programme based on the program provided in Modern Quantum Chemistry by Attila Szabo.
+The origin code in Szabo's book performs Hatree Fock calculation using single zeta -NG(N ranges from 1 to 3) for $H-He^{+}$, which contains 2 electrons.
 
-In this repository, specifically main.f90, I extended the code in Szabo's book, making it capable of performing arbitrary number of
+In this repository, specifically the main.f90, I extended the code in Szabo's book, making it capable of performing calculation of an arbitrary number of
 atoms and electrons. 
-The user only have to define certrain constant variables and provide a formatted file indicating the configuration of atoms.
+The user only has to define certain constant variables and provide a formatted file indicating the configuration of atoms.
 
-# Usage of programme 
+# Usage of the programme 
 
 As the user can see in main.f90, the following variables should be provided
 
@@ -20,12 +20,12 @@ num\_atom : total number of atoms
 
 max\_iter : maximum of iterations
 
-Please don't forget to change the path of file containing the configuration.
+Please don't forget to change the path of the file containing the configuration.
 The format of the file can be found in geomtry\_rep.xyz, which is the standard
 import form of fhi-aims(an outstanding ab initio calculation software). 
 
 After determining the necessary information mentioned above, the user just have to compile
-the programme. For example:
+the program. For example:
 
 ```shell
 ifort main.f90 -llapack -lblas -o myprogramme
@@ -33,14 +33,15 @@ ifort main.f90 -llapack -lblas -o myprogramme
 
 Note that for simplicity and efficiency, I used lapack and blas for matrix diagonalization.
 
-And run the programme:
+And run the program:
 
 ```shell
 ./myprogramme
 ```
 
-Note that the results of the programme I uploaded is the same with that in Szabo's book, which verifies that 
-there is highly likely no error in my programme.
+Note that the result of the program I uploaded, which contains the same set of the configuration
+considered in Szabo's book, is same with that in Szabo's book, which verifies that 
+there is highly likely no error in my program.
 # Notes
 
 The default basis in the main.f90 is single zeta-3G 1s for H and He.
